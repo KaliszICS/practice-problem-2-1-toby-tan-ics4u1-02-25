@@ -193,7 +193,7 @@ public class PracticeProblemTest {
          Class[] cArg = { char[].class, char.class };
          Method method = testClass.getDeclaredMethod("findSecond", cArg);
          // Enter code here
-         assertEquals(3, (int) method.invoke(null, new char[] { '0', '1', '2', '3' }, '3'));
+         assertEquals(-1, (int) method.invoke(null, new char[] { '0', '1', '2', '3' }, '3'));
       }
 
       catch (NoSuchMethodException e) {
